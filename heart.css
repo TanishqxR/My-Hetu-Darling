@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@600&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0b1522;
+  font-family: 'Cedarville Cursive', cursive;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.heart {
+  height: 150px;
+  width: 150px;
+  background: #f20044;
+  position: relative;
+  transform: rotate(45deg);
+  box-shadow: -20px 20px 150px #f20044;
+  animation: heart 0.6s linear infinite;
+}
+
+.Hetu {
+  position: fixed;
+  margin-bottom: 50px;
+  text-align: center;
+  color: white;
+}
+
+@keyframes heart {
+  0% {
+    transform: rotate(45deg) scale(1.07);
+  }
+
+  80% {
+    transform: rotate(45deg) scale(1.03);
+  }
+
+  100% {
+    transform: rotate(45deg) scale(1.0);
+  }
+}
+
+.heart::before {
+  content: '';
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  background: #f20044;
+  right: 50%;
+  border-radius: 50%;
+  box-shadow: 20px 20px 150px #f20044;
+}
+
+.heart::after {
+  content: '';
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  background: #f20044;
+  top: -50%;
+  border-radius: 50%;
+  box-shadow: 20px 20px 150px #f20044;
+}
+h3{
+  margin: -180px;
+  padding-top: 23%;
+  color: #f20044;
+  text-transform: capitalize;
+}
